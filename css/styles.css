@@ -206,13 +206,14 @@ p:last-child {
 }
 
 .header__logo {
-  height: 48px;
+  height: 60px;
   width: auto;
 }
 
 .header__logo img {
   height: 100%;
   width: auto;
+  max-height: 60px;
 }
 
 .nav {
@@ -564,8 +565,10 @@ p:last-child {
 }
 
 .footer__logo {
-  height: 48px;
+  height: 60px;
+  width: auto;
   margin-bottom: var(--spacing-md);
+}
 }
 
 .footer__tagline {
