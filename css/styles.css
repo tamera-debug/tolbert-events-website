@@ -211,7 +211,7 @@ p:last-child {
 }
 
 .header__logo img {
-  height: 70px;
+  height: 80px;
   width: auto;
   object-fit: contain;
 }
