@@ -27,7 +27,7 @@
   --spacing-xl: 6rem;
   
   --max-width: 1200px;
-  --header-height: 100px;
+  --header-height: 80px;
   
   --transition-fast: 0.2s ease;
   --transition-medium: 0.3s ease;
@@ -211,7 +211,7 @@ p:last-child {
 }
 
 .header__logo img {
-  height: 50px;
+  height: 40px;
   width: auto;
   object-fit: contain;
 }
@@ -565,7 +565,7 @@ p:last-child {
 }
 
 .footer__logo {
-  height: 50px;
+  height: 40px;
   width: auto;
   object-fit: contain;
   margin-bottom: var(--spacing-md);
