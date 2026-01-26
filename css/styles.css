@@ -259,7 +259,7 @@ p:last-child {
 }
 
 .nav__link--cta:hover {
-  background-color: var(--color-black);
+  background-color: var(--color-blue-gray);
 }
 
 /* Mobile Menu */
