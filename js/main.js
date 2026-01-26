@@ -106,14 +106,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const webhookUrl = contactForm.dataset.webhook || '';
         
         if (webhookUrl) {
-          const response = await fetch(webhookUrl, {
-            method: 'POST',
-            mode: 'no-cors',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data)
-          });
+  const response = await fetch(webhookUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: new URLSearchParams(data).toString()
+  });
           
           if (response.ok) {
             showFormSuccess(contactForm, 'Thank you! I\'ll respond within 2 business days.');
@@ -154,11 +153,10 @@ document.addEventListener('DOMContentLoaded', function() {
         if (webhookUrl) {
   const response = await fetch(webhookUrl, {
     method: 'POST',
-    mode: 'no-cors',
     headers: {
-      'Content-Type': 'application/json',
+      'Content-Type': 'application/x-www-form-urlencoded',
     },
-    body: JSON.stringify(data)
+    body: new URLSearchParams(data).toString()
   });
           
           if (response.ok) {
