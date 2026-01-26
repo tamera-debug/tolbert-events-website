@@ -371,8 +371,8 @@ p:last-child {
 }
 
 .btn--primary:hover {
-  background-color: var(--color-black);
-  border-color: var(--color-black);
+  background-color: var(--color-blue-gray);
+  border-color: var(--color-blue-gray);
 }
 
 .btn--secondary {
