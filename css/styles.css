@@ -794,8 +794,6 @@ p:last-child {
 }
 
 .about-story__image {
-  aspect-ratio: 3/4;
-  background-color: var(--color-dark-cream);
   border-radius: 4px;
   overflow: hidden;
   position: sticky;
