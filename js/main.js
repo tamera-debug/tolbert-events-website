@@ -151,13 +151,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const webhookUrl = signupForm.dataset.webhook || '';
         
         if (webhookUrl) {
-          const response = await fetch(webhookUrl, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data)
-          });
+  const response = await fetch(webhookUrl, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data)
+  });
           
           if (response.ok) {
             showFormSuccess(signupForm, 'You\'re subscribed! Check your inbox for a welcome email.');
