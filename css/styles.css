@@ -211,7 +211,7 @@ p:last-child {
 }
 
 .header__logo img {
-  height: 80px;
+  height: 50px;
   width: auto;
   object-fit: contain;
 }
@@ -565,7 +565,7 @@ p:last-child {
 }
 
 .footer__logo {
-  height: 80px;
+  height: 50px;
   width: auto;
   object-fit: contain;
   margin-bottom: var(--spacing-md);
