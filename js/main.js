@@ -108,6 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (webhookUrl) {
           const response = await fetch(webhookUrl, {
             method: 'POST',
+            mode: 'no-cors',
             headers: {
               'Content-Type': 'application/json',
             },
