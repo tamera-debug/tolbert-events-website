@@ -101,9 +101,6 @@
             <input type="hidden" name="access_key" value="d548965e-8524-45c1-bb86-45c71e95b2b3">
             <input type="hidden" name="subject" value="New Contact Form Submission">
             <input type="hidden" name="redirect" value="https://tamera-debug.github.io/tolbert-events-website/contact.html?success=true">
-            
-            <!-- Honeypot field -->
-            <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
 
             <div class="form-group">
               <label for="name" class="form-group__label">Name</label>
@@ -133,8 +130,11 @@
             
             <div class="form-group">
               <label for="message" class="form-group__label">What are you struggling with?</label>
-              <textarea id="message" name="message" class="form-group__textarea" placeholder="Tell me about your event, your challenges, and what kind of support you're looking for..."></textarea>
+              <textarea id="message" name="message" class="form-form__textarea" placeholder="Tell me about your event, your challenges, and what kind of support you're looking for..."></textarea>
             </div>
+            
+            <!-- hCaptcha -->
+            <div class="h-captcha" data-captcha="true"></div>
             
             <button type="submit" class="btn btn--primary contact-form__submit">send message</button>
             
