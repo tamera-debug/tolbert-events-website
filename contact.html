@@ -181,5 +181,18 @@
   
   <script src="js/main.js"></script>
   <script src="https://web3forms.com/client/script.js" async defer></script>
+  <script>
+  // Check for successful form submission
+  if (window.location.search.includes('success=true')) {
+    const form = document.querySelector('form');
+    const successMessage = document.createElement('div');
+    successMessage.style.cssText = 'padding: 1rem; background: #E8F5E9; color: #2E7D32; border-radius: 4px; margin-top: 1rem; text-align: center;';
+    successMessage.textContent = 'Thank you! Your message has been sent. I\'ll respond within 2 business days.';
+    form.appendChild(successMessage);
+    
+    // Remove ?success=true from URL without refreshing
+    window.history.replaceState({}, '', window.location.pathname);
+  }
+</script>
 </body>
 </html>
