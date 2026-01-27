@@ -60,12 +60,13 @@
         <h2 class="resources-signup__title">Stay in the loop</h2>
         <p class="resources-signup__text">Get occasional insights on speaker management, content strategy, and event systems—delivered straight to your inbox. No fluff, just practical ideas you can actually use.</p>
         
-        <form id="signup-form" class="signup-form" data-webhook="https://hook.us2.make.com/c97nwhio1i3phn7lngithxz5qsgi0sd2">
-          <!-- Honeypot field - hidden from humans -->
-          <div style="position: absolute; left: -9999px;">
-            <label for="company">Company</label>
-            <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
-          </div>
+        <form id="signup-form" class="signup-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="80486dc8-5fa6-43e0-bb9f-977f0da1ea17">
+          <input type="hidden" name="subject" value="New Newsletter Signup">
+          <input type="hidden" name="redirect" value="https://tamera-debug.github.io/tolbert-events-website/resources.html?success=true">
+          
+          <!-- Honeypot field -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
 
           <input 
             type="email" 
