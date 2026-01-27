@@ -990,6 +990,13 @@ p:last-child {
 .signup-form__row {
   display: flex;
   gap: 1rem;
+  justify-content: center;
+}
+
+.signup-form .h-captcha {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .resources-signup__promise {
