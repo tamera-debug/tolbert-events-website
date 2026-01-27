@@ -962,9 +962,11 @@ p:last-child {
 
 .signup-form {
   display: flex;
+  flex-direction: column;
   gap: var(--spacing-sm);
   max-width: 450px;
   margin: 0 auto var(--spacing-sm);
+  align-items: center;
 }
 
 .signup-form__input {
