@@ -97,12 +97,13 @@
         
        <!-- Contact Form -->
         <div class="contact-form">
-          <form id="contact-form" data-webhook="">
-            <!-- Honeypot field - hidden from humans -->
-            <div style="position: absolute; left: -9999px;">
-              <label for="website">Website</label>
-              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
-            </div>
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="d548965e-8524-45c1-bb86-45c71e95b2b3">
+            <input type="hidden" name="subject" value="New Contact Form Submission">
+            <input type="hidden" name="redirect" value="https://tamera-debug.github.io/tolbert-events-website/contact.html?success=true">
+            
+            <!-- Honeypot field -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
 
             <div class="form-group">
               <label for="name" class="form-group__label">Name</label>
