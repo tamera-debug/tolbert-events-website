@@ -1135,6 +1135,24 @@ p:last-child {
   color: var(--color-blue-gray);
 }
 
+.content-narrow {
+  max-width: 800px;
+}
+
+.content-narrow h2 {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+.content-narrow h3 {
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+.content-narrow p {
+  margin-bottom: var(--spacing-sm);
+}
+
 /* Responsive */
 @media (max-width: 968px) {
   .service-detail__inner {
